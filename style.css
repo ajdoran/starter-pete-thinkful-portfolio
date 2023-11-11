@@ -16,9 +16,12 @@ h3 {
   text-align: center;
 }
 
-/* Header */
+/* Header updated with flex */
 header {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
 }
 
 /* Containers */
@@ -75,4 +78,33 @@ footer {
 /* Other page elements */
 hr {
   border: 1px solid black;
+}
+
+
+/* container class for About section 1fr 1fr */ 
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  align-items: center;
+  text-align: center;
+}
+
+/* align the text in the container left */ 
+.about-left{
+  align-items:center;
+  text-align:left;
+}
+/* class for p to 14px on portfolio page */
+.font-to-14px {
+  font-size: 14px;
+}
+
+/* container class for the portfolio 1fr 1fr 1fr */ 
+.container-folio {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  align-items: center;
+  text-align: center;
 }
